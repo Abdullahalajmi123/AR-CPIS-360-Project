@@ -12,25 +12,25 @@
 
 <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false;">
 
-  <!-- HIRO MARKER = iPhone placeholder -->
+  <!-- HIRO MARKER = iPhone -->
   <a-marker preset="hiro">
 
-    <!-- Placeholder Cube for iPhone -->
+    <!-- iPhone placeholder cube scaled 500% -->
     <a-box
       position="0 0.5 0"
-      depth="0.5"
-      height="2"
-      width="1"
+      depth="2.5"   <!-- 5× bigger -->
+      height="10"
+      width="5"
       color="blue">
     </a-box>
 
     <a-text
       value="iPhone Package\nStatus: Verified"
-      position="0 2.5 0"
+      position="0 6 0"
       rotation="-90 0 0"
       color="green"
       align="center"
-      width="6">
+      width="10">
     </a-text>
 
   </a-marker>
@@ -38,10 +38,11 @@
   <!-- KANJI MARKER = Headset -->
   <a-marker preset="kanji">
 
+    <!-- Headset model 25% smaller -->
     <a-gltf-model
       src="./models/headphones.glb"
       position="0 0.5 0"
-      scale="15 15 15"
+      scale="11.25 11.25 11.25"  <!-- 15 × 0.75 = 11.25 -->
       rotation="-90 0 0">
     </a-gltf-model>
 
