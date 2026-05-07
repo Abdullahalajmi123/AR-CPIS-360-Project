@@ -14,40 +14,44 @@
 
   <!-- HIRO MARKER = iPhone -->
   <a-marker preset="hiro">
+
     <a-gltf-model
       src="./models/iphone.glb"
-      position="0 0.4 0"
-      scale="25 25 25"      <!-- reasonable scale -->
-      rotation="-90 0 180">  <!-- upright facing camera -->
+      position="0 0.5 0"
+      scale="200 200 200"
+      rotation="-90 0 0">
     </a-gltf-model>
 
     <a-text
       value="iPhone Package\nStatus: Verified"
-      position="0 1.8 0"
+      position="0 3 0"
       rotation="-90 0 0"
       color="green"
       align="center"
       width="6">
     </a-text>
+
   </a-marker>
 
   <!-- KANJI MARKER = Headset -->
   <a-marker preset="kanji">
+
     <a-gltf-model
       src="./models/headphones.glb"
-      position="0 0.4 0"
-      scale="8 8 8"        <!-- slightly smaller than before -->
+      position="0 0.5 0"
+      scale="11.25 11.25 11.25"
       rotation="-90 0 0">
     </a-gltf-model>
 
     <a-text
       value="Headset Package\nStatus: Verified"
-      position="0 1.5 0"
+      position="0 2 0"
       rotation="-90 0 0"
       color="blue"
       align="center"
       width="6">
     </a-text>
+
   </a-marker>
 
   <a-entity camera></a-entity>
