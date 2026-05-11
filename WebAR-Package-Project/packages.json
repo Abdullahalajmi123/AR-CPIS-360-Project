@@ -19,7 +19,7 @@
     "modelSrc": "./models/headphones.glb",
     "scale": "8 8 8",
     "modelPosition": "0 0 0",
-    "modelRotation": "150 0 0",
+    "modelRotation": "0 0 0",
     "text": "Headset Package\nStatus: Verified",
     "textColor": "blue",
     "textPosition": "0 0 1.5",
