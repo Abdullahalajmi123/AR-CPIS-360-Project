@@ -8,59 +8,66 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
   <script>
-  AFRAME.registerComponent('package-manager', {
-    init: function () {
-      const sceneEl = this.el;
+    AFRAME.registerComponent('package-manager', {
+      init: function () {
+        const sceneEl = this.el;
 
-      fetch('packages.json')
-        .then(response => response.json())
-        .then(data => {
-
-          data.forEach(pkg => {
-            const marker = document.createElement('a-marker');
-
-            if (pkg.markerType === 'preset') {
-              marker.setAttribute('preset', pkg.markerValue);
-            } else if (pkg.markerType === 'pattern') {
-              marker.setAttribute('type', 'pattern');
-              marker.setAttribute('url', pkg.markerValue); 
+        fetch('./packages.json')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Cannot load packages.json');
             }
+            return response.json();
+          })
+          .then(data => {
+            data.forEach(pkg => {
+              const marker = document.createElement('a-marker');
 
-            // 1. Apply Dynamic Model Position & Rotation
-            const model = document.createElement('a-gltf-model');
-            model.setAttribute('src', pkg.modelSrc);
-            model.setAttribute('scale', pkg.scale);
-            // Look for the JSON value, or use a default fallback
-            model.setAttribute('position', pkg.modelPosition || '0 0.5 0'); 
-            model.setAttribute('rotation', pkg.modelRotation || '0 0 0');
+              if (pkg.markerType === 'preset') {
+                marker.setAttribute('preset', pkg.markerValue);
+              } else if (pkg.markerType === 'pattern') {
+                marker.setAttribute('type', 'pattern');
+                marker.setAttribute('url', pkg.markerValue);
+              }
 
-            // 2. Apply Dynamic Text Position & Rotation
-            const text = document.createElement('a-text');
-            text.setAttribute('value', pkg.text);
-            text.setAttribute('color', pkg.textColor);
-            text.setAttribute('align', 'center');
-            text.setAttribute('width', '6');
-            // Look for the JSON value, or use a default fallback
-            text.setAttribute('position', pkg.textPosition || '0 0 1.5');
-            text.setAttribute('rotation', pkg.textRotation ||  '-90 0 0');
+              const model = document.createElement('a-gltf-model');
+              model.setAttribute('src', pkg.modelSrc);
+              model.setAttribute('position', pkg.modelPosition);
+              model.setAttribute('scale', pkg.scale);
+              model.setAttribute('rotation', pkg.modelRotation);
+              model.setAttribute('animation', 'property: rotation; to: 0 360 0; loop: true; dur: 8000');
 
-            marker.appendChild(model);
-            marker.appendChild(text);
-            sceneEl.appendChild(marker);
+              const text = document.createElement('a-text');
+              text.setAttribute('value', pkg.text);
+              text.setAttribute('position', pkg.textPosition);
+              text.setAttribute('rotation', pkg.textRotation);
+              text.setAttribute('color', pkg.textColor);
+              text.setAttribute('align', 'center');
+              text.setAttribute('width', '6');
+
+              marker.appendChild(model);
+              marker.appendChild(text);
+              sceneEl.appendChild(marker);
+            });
+          })
+          .catch(error => {
+            console.error('Error loading package data:', error);
+            alert('Error loading packages.json. Check file name and location.');
           });
-        })
-        .catch(error => {
-          console.error('Error loading package data:', error);
-        });
-    }
-  });
-</script>
+      }
+    });
+  </script>
 </head>
 
 <body style="margin:0; overflow:hidden;">
 
-<a-scene package-manager embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false;">
-  
+<a-scene
+  package-manager
+  embedded
+  vr-mode-ui="enabled: false"
+  renderer="logarithmicDepthBuffer: true;"
+  arjs="sourceType: webcam; debugUIEnabled: false;">
+
   <a-entity camera></a-entity>
 
 </a-scene>
