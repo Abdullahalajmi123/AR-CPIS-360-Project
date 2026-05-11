@@ -1,0 +1,20 @@
+[
+  {
+    "id": "iphone-pkg",
+    "markerType": "preset",
+    "markerValue": "hiro",
+    "modelSrc": "./models/iphone.glb",
+    "scale": "15 15 15",
+    "text": "iPhone Package\nStatus: Verified",
+    "textColor": "green"
+  },
+  {
+    "id": "headset-pkg",
+    "markerType": "preset",
+    "markerValue": "kanji",
+    "modelSrc": "./models/headphones.glb",
+    "scale": "8 8 8",
+    "text": "Headset Package\nStatus: Verified",
+    "textColor": "blue"
+  }
+]
