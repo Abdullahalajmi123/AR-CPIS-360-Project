@@ -5,7 +5,7 @@
     "markerValue": "hiro",
     "modelSrc": "./models/iphone.glb",
     "scale": "12 12 12",
-    "modelPosition": "0 10 0",
+    "modelPosition": "0 2.2 5",
     "modelRotation": "-90 0 0",
     "text": "iPhone Package\nStatus: Verified",
     "textColor": "green",
