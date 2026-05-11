@@ -12,7 +12,7 @@
       init: function () {
         const sceneEl = this.el;
 
-        fetch('./packages.json')
+        fetch('./packages.json?v=' + Date.now())
           .then(response => {
             if (!response.ok) {
               throw new Error('Cannot load packages.json');
@@ -35,7 +35,6 @@
               model.setAttribute('position', pkg.modelPosition);
               model.setAttribute('scale', pkg.scale);
               model.setAttribute('rotation', pkg.modelRotation);
-              model.setAttribute('animation', 'property: rotation; to: 0 360 0; loop: true; dur: 8000');
 
               const text = document.createElement('a-text');
               text.setAttribute('value', pkg.text);
