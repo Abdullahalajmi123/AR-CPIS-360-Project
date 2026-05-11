@@ -6,7 +6,7 @@
     "modelSrc": "./models/iphone.glb",
     "scale": "15 15 15",
     "modelPosition": "0 0 0", 
-    "modelRotation": "270 0 0",
+    "modelRotation": "40 0 0",
     "text": "iPhone Package\nStatus: Verified",
     "textColor": "green",
     "textPosition": "0 0 1.5",
