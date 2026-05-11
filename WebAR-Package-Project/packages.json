@@ -5,8 +5,12 @@
     "markerValue": "hiro",
     "modelSrc": "./models/iphone.glb",
     "scale": "15 15 15",
+    "modelPosition": "0 1 0", 
+    "modelRotation": "0 0 0",
     "text": "iPhone Package\nStatus: Verified",
-    "textColor": "green"
+    "textColor": "green",
+    "textPosition": "0 0 1.5",
+    "textRotation": "-90 0 0"
   },
   {
     "id": "headset-pkg",
@@ -14,7 +18,11 @@
     "markerValue": "kanji",
     "modelSrc": "./models/headphones.glb",
     "scale": "8 8 8",
+    "modelPosition": "0 1 0",
+    "modelRotation": "0 0 0",
     "text": "Headset Package\nStatus: Verified",
-    "textColor": "blue"
+    "textColor": "blue",
+    "textPosition": "0 0 1.5",
+    "textRotation": "-90 0 0"
   }
 ]
