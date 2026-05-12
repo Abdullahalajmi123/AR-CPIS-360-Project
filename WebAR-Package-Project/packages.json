@@ -17,7 +17,7 @@
     "markerType": "preset",
     "markerValue": "kanji",
     "modelSrc": "./models/headphones.glb",
-    "scale": "8 8 8",
+    "scale": "15 15 15",
     "modelPosition": "0 0 -2",
     "modelRotation": "90 180 0",
     "text": "Headset Package\nStatus: Verified",
