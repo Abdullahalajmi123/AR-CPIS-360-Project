@@ -9,7 +9,7 @@
     "modelRotation": "90 180 0",
     "text": "iPhone Package\nStatus: Verified",
     "textColor": "green",
-    "textPosition": "0 0 1.5",
+    "textPosition": "0 0 1",
     "textRotation": "-90 0 0"
   },
   {
@@ -18,11 +18,11 @@
     "markerValue": "kanji",
     "modelSrc": "./models/headphones.glb",
     "scale": "15 15 15",
-    "modelPosition": "0 0 -1",
+    "modelPosition": "0 0 -1.5",
     "modelRotation": "90 180 0",
     "text": "Headset Package\nStatus: Verified",
     "textColor": "blue",
-    "textPosition": "0 0 1.5",
+    "textPosition": "0 0 1",
     "textRotation": "-90 0 0"
   }
 ]
