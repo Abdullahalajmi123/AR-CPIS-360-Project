@@ -51,14 +51,14 @@
       {
         "modelSrc": "./models/rubix_cube.glb",
         "scale": "0.1 0.1 0.1",
-        "modelPosition": "1 0 -2.5",
+        "modelPosition": "-1 1 -2.5",
         "modelRotation": "360 180 0"
       },
       {
         "modelSrc": "./models/trading_card_pack.glb",
         "scale": "5 5 5",
         "modelPosition": "0.6 0 -2.5",
-        "modelRotation": "0 180 180"
+        "modelRotation": "-90 180 0"
       }
     ],
     "text": "Order #: AMZ-918604\nReceiver: Dr_Foad",
