@@ -1,0 +1,69 @@
+[
+  {
+    "id": "iphone-pkg",
+    "markerType": "preset",
+    "markerValue": "hiro",
+    "modelSrc": "./models/iphone.glb",
+    "scale": "15 15 15",
+    "modelPosition": "0 0 -2",
+    "modelRotation": "90 180 0",
+    "text": "Order #: AMZ-482913\nReceiver: Abdullah-Alajmi",
+    "textColor": "green",
+    "textPosition": "0 0 0.8",
+    "textRotation": "-90 0 0"
+  },
+  {
+    "id": "headset-pkg",
+    "markerType": "preset",
+    "markerValue": "kanji",
+    "modelSrc": "./models/headphones.glb",
+    "scale": "15 15 15",
+    "modelPosition": "0 0 -1.5",
+    "modelRotation": "90 180 0",
+    "text": "Order #: AMZ-736205\nReceiver: Nawaf-Alsulami",
+    "textColor": "blue",
+    "textPosition": "0 0 0.8",
+    "textRotation": "-90 0 0"
+  },
+  {
+    "id": "dr-foad-pkg",
+    "markerType": "pattern",
+    "markerValue": "./markers/drfoad.patt",
+    "items": [
+      {
+        "modelSrc": "./models/cup.glb",
+        "scale": "4 4 4",
+        "modelPosition": "-1.2 0 -1.5",
+        "modelRotation": "90 180 0"
+      },
+      {
+        "modelSrc": "./models/diamond_ring.glb",
+        "scale": "6 6 6",
+        "modelPosition": "0 0 -1.5",
+        "modelRotation": "90 180 0"
+      },
+      {
+        "modelSrc": "./models/hand_watch.glb",
+        "scale": "4 4 4",
+        "modelPosition": "1.2 0 -1.5",
+        "modelRotation": "90 180 0"
+      },
+      {
+        "modelSrc": "./models/rubix_cube.glb",
+        "scale": "4 4 4",
+        "modelPosition": "-0.6 0 -2.5",
+        "modelRotation": "90 180 0"
+      },
+      {
+        "modelSrc": "./models/trading_card_pack.glb",
+        "scale": "4 4 4",
+        "modelPosition": "0.6 0 -2.5",
+        "modelRotation": "90 180 0"
+      }
+    ],
+    "text": "Order #: AMZ-918604\nReceiver: Dr_Foad",
+    "textColor": "purple",
+    "textPosition": "0 0 0.8",
+    "textRotation": "-90 0 0"
+  }
+]
