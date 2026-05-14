@@ -51,7 +51,7 @@
       {
         "modelSrc": "./models/rubix_cube.glb",
         "scale": "0.1 0.1 0.1",
-        "modelPosition": "-1 0 -2.6",
+        "modelPosition": "-1 0 -3",
         "modelRotation": "180 180 0"
       },
       {
