@@ -32,31 +32,31 @@
     "items": [
       {
         "modelSrc": "./models/cup.glb",
-        "scale": "4 4 4",
+        "scale": "0.5 0.5 0.5",
         "modelPosition": "-1.2 0 -1.5",
         "modelRotation": "90 180 0"
       },
       {
         "modelSrc": "./models/diamond_ring.glb",
-        "scale": "6 6 6",
+        "scale": "0.5 0.5 0.5",
         "modelPosition": "0 0 -1.5",
         "modelRotation": "90 180 0"
       },
       {
         "modelSrc": "./models/hand_watch.glb",
-        "scale": "4 4 4",
+        "scale": "0.5 0.5 0.5",
         "modelPosition": "1.2 0 -1.5",
         "modelRotation": "90 180 0"
       },
       {
         "modelSrc": "./models/rubix_cube.glb",
-        "scale": "4 4 4",
+        "scale": "0.5 0.5 0.5",
         "modelPosition": "-0.6 0 -2.5",
         "modelRotation": "90 180 0"
       },
       {
         "modelSrc": "./models/trading_card_pack.glb",
-        "scale": "4 4 4",
+        "scale": "0.5 0.5 0.5",
         "modelPosition": "0.6 0 -2.5",
         "modelRotation": "90 180 0"
       }
