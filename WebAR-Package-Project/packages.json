@@ -38,20 +38,20 @@
       },
       {
         "modelSrc": "./models/diamond_ring.glb",
-        "scale": "0.5 0.5 0.5",
+        "scale": "0.3 0.3 0.3",
         "modelPosition": "0 0 -1.5",
         "modelRotation": "90 180 0"
       },
       {
         "modelSrc": "./models/hand_watch.glb",
         "scale": "0.5 0.5 0.5",
-        "modelPosition": "1.2 0 -1.5",
+        "modelPosition": "1.6 0 -1.5",
         "modelRotation": "270 180 0"
       },
       {
         "modelSrc": "./models/rubix_cube.glb",
         "scale": "0.1 0.1 0.1",
-        "modelPosition": "-1.5 2 -2.5",
+        "modelPosition": "0.5 -1 -2.5",
         "modelRotation": "360 180 0"
       },
       {
