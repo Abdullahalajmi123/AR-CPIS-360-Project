@@ -45,13 +45,13 @@
       {
         "modelSrc": "./models/hand_watch.glb",
         "scale": "0.4 0.4 0.4",
-        "modelPosition": "1.6 0 -1.5",
+        "modelPosition": "1.4 0 -1.7",
         "modelRotation": "270 180 0"
       },
       {
         "modelSrc": "./models/rubix_cube.glb",
         "scale": "0.1 0.1 0.1",
-        "modelPosition": "1 0 1.5",
+        "modelPosition": "-1.3 0 0.5",
         "modelRotation": "360 180 0"
       },
       {
