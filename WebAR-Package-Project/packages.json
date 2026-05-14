@@ -58,7 +58,7 @@
         "modelSrc": "./models/trading_card_pack.glb",
         "scale": "10 10 10",
         "modelPosition": "0.6 0 -2.5",
-        "modelRotation": "180 180 0"
+        "modelRotation": "360 180 0"
       }
     ],
     "text": "Order #: AMZ-918604\nReceiver: Dr_Foad",
