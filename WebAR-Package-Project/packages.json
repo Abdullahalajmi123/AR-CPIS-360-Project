@@ -1,72 +1,61 @@
 [
-  {
-    "id": "AMZ-1001",
-    "items": [
-      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"}
-    ]
-  },
-  {
-    "id": "AMZ-1002",
-    "items": [
-      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
-      {"modelSrc": "./models/hand_watch.glb", "modelPosition": "0 0 -2", "modelRotation": "270 180 0", "scale": "0.4 0.4 0.4"}
-    ]
-  },
-  {
-    "id": "AMZ-1003",
-    "items": [
-      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
-      {"modelSrc": "./models/hand_watch.glb", "modelPosition": "0 0 -2", "modelRotation": "270 180 0", "scale": "0.4 0.4 0.4"},
-      {"modelSrc": "./models/rubix_cube.glb", "modelPosition": "0 0 -2", "modelRotation": "180 180 0", "scale": "0.1 0.1 0.1"}
-    ]
-  },
-  {
-    "id": "AMZ-1004",
-    "items": [
-      {"modelSrc": "./models/cup.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.5 0.5 0.5"}
-    ]
-  },
-  {
-    "id": "AMZ-1005",
-    "items": [
-      {"modelSrc": "./models/trading_card_pack.glb", "modelPosition": "0 0 -2", "modelRotation": "0 0 0", "scale": "3 3 3"},
-      {"modelSrc": "./models/diamond_ring.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.2 0.2 0.2"}
-    ]
-  },
-  {
-    "id": "AMZ-1006",
-    "items": [
-      {"modelSrc": "./models/headphones.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"}
-    ]
-  },
-  {
-    "id": "AMZ-1007",
-    "items": [
-      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
-      {"modelSrc": "./models/cup.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.5 0.5 0.5"}
-    ]
-  },
-  {
-    "id": "AMZ-1008",
-    "items": [
-      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
-      {"modelSrc": "./models/rubix_cube.glb", "modelPosition": "0 0 -2", "modelRotation": "180 180 0", "scale": "0.1 0.1 0.1"}
-    ]
-  },
-  {
-    "id": "AMZ-1009",
-    "items": [
-      {"modelSrc": "./models/hand_watch.glb", "modelPosition": "0 0 -2", "modelRotation": "270 180 0", "scale": "0.4 0.4 0.4"},
-      {"modelSrc": "./models/cup.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.5 0.5 0.5"},
-      {"modelSrc": "./models/diamond_ring.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.2 0.2 0.2"}
-    ]
-  },
-  {
-    "id": "AMZ-1010",
-    "items": [
-      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
-      {"modelSrc": "./models/hand_watch.glb", "modelPosition": "0 0 -2", "modelRotation": "270 180 0", "scale": "0.4 0.4 0.4"},
-      {"modelSrc": "./models/headphones.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"}
-    ]
-  }
+  {"id":"AMZ-900001","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#ff7a00"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#007bff"}],"text":"Order #: AMZ-900001\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900002","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"0 0 -1.2","modelRotation":"90 180 0","color":"#000000"}],"text":"Order #: AMZ-900002\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900003","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#ff0000"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ffffff"}],"text":"Order #: AMZ-900003\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900004","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#00aa55"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#111111"},{"modelSrc":"./models/diamond_ring.glb","scale":"0.2 0.2 0.2","modelPosition":"0.7 0 -1.2","modelRotation":"90 180 0","color":"#ffd700"}],"text":"Order #: AMZ-900004\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900005","items":[{"modelSrc":"./models/trading_card_pack.glb","scale":"3 3 3","modelPosition":"0 0 -1.25","modelRotation":"0 0 0"}],"text":"Order #: AMZ-900005\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+
+  {"id":"AMZ-900006","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#1e90ff"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ff7a00"}],"text":"Order #: AMZ-900006\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900007","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#ffffff"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#000000"}],"text":"Order #: AMZ-900007\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900008","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#ff7a00"},{"modelSrc":"./models/headphones.glb","scale":"15 15 15","modelPosition":"0.7 0 -1.2","modelRotation":"90 180 0","color":"#222222"}],"text":"Order #: AMZ-900008\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900009","items":[{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"-0.45 0 -1.2","modelRotation":"270 180 0","color":"#007bff"},{"modelSrc":"./models/cup.glb","scale":"0.5 0.5 0.5","modelPosition":"0.55 0 -1.2","modelRotation":"90 180 0","color":"#ff0000"}],"text":"Order #: AMZ-900009\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900010","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#000000"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#000000"},{"modelSrc":"./models/trading_card_pack.glb","scale":"3 3 3","modelPosition":"0.7 0 -1.25","modelRotation":"0 0 0"}],"text":"Order #: AMZ-900010\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+
+  {"id":"AMZ-900011","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"0 0 -1.2","modelRotation":"90 180 0","color":"#800080"}],"text":"Order #: AMZ-900011\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900012","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#ffc0cb"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#007bff"}],"text":"Order #: AMZ-900012\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900013","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#c0c0c0"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#ff0000"},{"modelSrc":"./models/rubix_cube.glb","scale":"0.1 0.1 0.1","modelPosition":"0.7 0 -1.2","modelRotation":"180 180 0","color":"#00ff00"}],"text":"Order #: AMZ-900013\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900014","items":[{"modelSrc":"./models/cup.glb","scale":"0.5 0.5 0.5","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#ffffff"},{"modelSrc":"./models/diamond_ring.glb","scale":"0.2 0.2 0.2","modelPosition":"0.55 0 -1.2","modelRotation":"90 180 0","color":"#ffd700"}],"text":"Order #: AMZ-900014\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900015","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#ff7a00"},{"modelSrc":"./models/trading_card_pack.glb","scale":"3 3 3","modelPosition":"0.55 0 -1.25","modelRotation":"0 0 0"}],"text":"Order #: AMZ-900015\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+
+  {"id":"AMZ-900016","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#003cff"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ffffff"}],"text":"Order #: AMZ-900016\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900017","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#101010"},{"modelSrc":"./models/headphones.glb","scale":"15 15 15","modelPosition":"0.55 0 -1.2","modelRotation":"90 180 0","color":"#007bff"}],"text":"Order #: AMZ-900017\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900018","items":[{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#ff7a00"}],"text":"Order #: AMZ-900018\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900019","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#00aa55"},{"modelSrc":"./models/cup.glb","scale":"0.5 0.5 0.5","modelPosition":"0 0 -1.2","modelRotation":"90 180 0","color":"#1e90ff"},{"modelSrc":"./models/diamond_ring.glb","scale":"0.2 0.2 0.2","modelPosition":"0.7 0 -1.2","modelRotation":"90 180 0","color":"#e6e6fa"}],"text":"Order #: AMZ-900019\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900020","items":[{"modelSrc":"./models/trading_card_pack.glb","scale":"3 3 3","modelPosition":"-0.55 0 -1.25","modelRotation":"0 0 0"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ff0000"}],"text":"Order #: AMZ-900020\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+
+  {"id":"AMZ-900021","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#ff0000"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#000000"}],"text":"Order #: AMZ-900021\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900022","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"0 0 -1.2","modelRotation":"90 180 0","color":"#007bff"}],"text":"Order #: AMZ-900022\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900023","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#ffffff"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#ffffff"},{"modelSrc":"./models/headphones.glb","scale":"15 15 15","modelPosition":"0.7 0 -1.2","modelRotation":"90 180 0","color":"#ffffff"}],"text":"Order #: AMZ-900023\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900024","items":[{"modelSrc":"./models/cup.glb","scale":"0.5 0.5 0.5","modelPosition":"0 0 -1.2","modelRotation":"90 180 0","color":"#ff7a00"}],"text":"Order #: AMZ-900024\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900025","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#000000"},{"modelSrc":"./models/diamond_ring.glb","scale":"0.2 0.2 0.2","modelPosition":"0.55 0 -1.2","modelRotation":"90 180 0","color":"#ffd700"}],"text":"Order #: AMZ-900025\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+
+  {"id":"AMZ-900026","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#ff7a00"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#00aa55"}],"text":"Order #: AMZ-900026\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900027","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#800080"},{"modelSrc":"./models/rubix_cube.glb","scale":"0.1 0.1 0.1","modelPosition":"0.55 0 -1.2","modelRotation":"180 180 0","color":"#ff0000"}],"text":"Order #: AMZ-900027\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900028","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#ffc0cb"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#007bff"},{"modelSrc":"./models/cup.glb","scale":"0.5 0.5 0.5","modelPosition":"0.7 0 -1.2","modelRotation":"90 180 0","color":"#ffffff"}],"text":"Order #: AMZ-900028\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900029","items":[{"modelSrc":"./models/headphones.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#ff0000"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ff0000"}],"text":"Order #: AMZ-900029\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900030","items":[{"modelSrc":"./models/trading_card_pack.glb","scale":"3 3 3","modelPosition":"0 0 -1.25","modelRotation":"0 0 0"}],"text":"Order #: AMZ-900030\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+
+  {"id":"AMZ-900031","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#00aa55"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ffffff"}],"text":"Order #: AMZ-900031\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900032","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#c0c0c0"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#111111"}],"text":"Order #: AMZ-900032\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900033","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#1e90ff"},{"modelSrc":"./models/diamond_ring.glb","scale":"0.2 0.2 0.2","modelPosition":"0 0 -1.2","modelRotation":"90 180 0","color":"#ffd700"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.7 0 -1.2","modelRotation":"270 180 0","color":"#ff7a00"}],"text":"Order #: AMZ-900033\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900034","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"0 0 -1.2","modelRotation":"90 180 0","color":"#ff7a00"}],"text":"Order #: AMZ-900034\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900035","items":[{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"-0.55 0 -1.2","modelRotation":"270 180 0","color":"#007bff"},{"modelSrc":"./models/trading_card_pack.glb","scale":"3 3 3","modelPosition":"0.55 0 -1.25","modelRotation":"0 0 0"}],"text":"Order #: AMZ-900035\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+
+  {"id":"AMZ-900036","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#000000"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ff7a00"}],"text":"Order #: AMZ-900036\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900037","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#ff0000"},{"modelSrc":"./models/cup.glb","scale":"0.5 0.5 0.5","modelPosition":"0.55 0 -1.2","modelRotation":"90 180 0","color":"#000000"}],"text":"Order #: AMZ-900037\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900038","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#007bff"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#007bff"},{"modelSrc":"./models/headphones.glb","scale":"15 15 15","modelPosition":"0.7 0 -1.2","modelRotation":"90 180 0","color":"#007bff"}],"text":"Order #: AMZ-900038\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900039","items":[{"modelSrc":"./models/diamond_ring.glb","scale":"0.2 0.2 0.2","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#ffd700"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ffffff"}],"text":"Order #: AMZ-900039\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900040","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#ffffff"},{"modelSrc":"./models/trading_card_pack.glb","scale":"3 3 3","modelPosition":"0.55 0 -1.25","modelRotation":"0 0 0"}],"text":"Order #: AMZ-900040\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+
+  {"id":"AMZ-900041","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#ff7a00"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ff7a00"}],"text":"Order #: AMZ-900041\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900042","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#00aa55"},{"modelSrc":"./models/headphones.glb","scale":"15 15 15","modelPosition":"0.55 0 -1.2","modelRotation":"90 180 0","color":"#00aa55"}],"text":"Order #: AMZ-900042\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900043","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#800080"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#800080"},{"modelSrc":"./models/cup.glb","scale":"0.5 0.5 0.5","modelPosition":"0.7 0 -1.2","modelRotation":"90 180 0","color":"#800080"}],"text":"Order #: AMZ-900043\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900044","items":[{"modelSrc":"./models/rubix_cube.glb","scale":"0.1 0.1 0.1","modelPosition":"0 0 -1.2","modelRotation":"180 180 0","color":"#ff7a00"}],"text":"Order #: AMZ-900044\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900045","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#c0c0c0"},{"modelSrc":"./models/trading_card_pack.glb","scale":"3 3 3","modelPosition":"0.55 0 -1.25","modelRotation":"0 0 0"}],"text":"Order #: AMZ-900045\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+
+  {"id":"AMZ-900046","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#ff0000"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#ff0000"}],"text":"Order #: AMZ-900046\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900047","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.55 0 -1.2","modelRotation":"90 180 0","color":"#000000"},{"modelSrc":"./models/headphones.glb","scale":"15 15 15","modelPosition":"0.55 0 -1.2","modelRotation":"90 180 0","color":"#000000"}],"text":"Order #: AMZ-900047\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900048","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#007bff"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#ffffff"},{"modelSrc":"./models/diamond_ring.glb","scale":"0.2 0.2 0.2","modelPosition":"0.7 0 -1.2","modelRotation":"90 180 0","color":"#ffd700"}],"text":"Order #: AMZ-900048\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900049","items":[{"modelSrc":"./models/cup.glb","scale":"0.5 0.5 0.5","modelPosition":"-0.45 0 -1.2","modelRotation":"90 180 0","color":"#007bff"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0.55 0 -1.2","modelRotation":"270 180 0","color":"#007bff"}],"text":"Order #: AMZ-900049\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"},
+  {"id":"AMZ-900050","items":[{"modelSrc":"./models/iphone.glb","scale":"15 15 15","modelPosition":"-0.7 0 -1.2","modelRotation":"90 180 0","color":"#ff7a00"},{"modelSrc":"./models/hand_watch.glb","scale":"0.4 0.4 0.4","modelPosition":"0 0 -1.2","modelRotation":"270 180 0","color":"#007bff"},{"modelSrc":"./models/trading_card_pack.glb","scale":"3 3 3","modelPosition":"0.7 0 -1.25","modelRotation":"0 0 0"}],"text":"Order #: AMZ-900050\nReceiver: Dr_Foad","textColor":"orange","textPosition":"0 0 0.8","textRotation":"-90 0 0"}
 ]
