@@ -1,69 +1,72 @@
 [
   {
-    "id": "iphone-pkg",
-    "markerType": "preset",
-    "markerValue": "hiro",
-    "modelSrc": "./models/iphone.glb",
-    "scale": "15 15 15",
-    "modelPosition": "0 0 -2",
-    "modelRotation": "90 180 0",
-    "text": "Order #: AMZ-482913\nReceiver: Abdullah-Alajmi",
-    "textColor": "green",
-    "textPosition": "0 0 0.8",
-    "textRotation": "-90 0 0"
-  },
-  {
-    "id": "headset-pkg",
-    "markerType": "preset",
-    "markerValue": "kanji",
-    "modelSrc": "./models/headphones.glb",
-    "scale": "15 15 15",
-    "modelPosition": "0 0 -1.5",
-    "modelRotation": "90 180 0",
-    "text": "Order #: AMZ-736205\nReceiver: Nawaf-Alsulami",
-    "textColor": "blue",
-    "textPosition": "0 0 0.8",
-    "textRotation": "-90 0 0"
-  },
-  {
-    "id": "dr-foad-pkg",
-    "markerType": "pattern",
-    "markerValue": "./markers/drfoad.patt",
+    "id": "AMZ-1001",
     "items": [
-      {
-        "modelSrc": "./models/cup.glb",
-        "scale": "0.5 0.5 0.5",
-        "modelPosition": "-1.2 0 -1.5",
-        "modelRotation": "90 180 0"
-      },
-      {
-        "modelSrc": "./models/diamond_ring.glb",
-        "scale": "0.2 0.2 0.2",
-        "modelPosition": "0 0 -1.5",
-        "modelRotation": "90 180 0"
-      },
-      {
-        "modelSrc": "./models/hand_watch.glb",
-        "scale": "0.4 0.4 0.4",
-        "modelPosition": "1.4 0 -1.7",
-        "modelRotation": "270 180 0"
-      },
-      {
-        "modelSrc": "./models/rubix_cube.glb",
-        "scale": "0.1 0.1 0.1",
-        "modelPosition": "-1 0 -3",
-        "modelRotation": "180 180 0"
-      },
-      {
-        "modelSrc": "./models/trading_card_pack.glb",
-        "scale": "3 3 3",
-        "modelPosition": "0.3 0 -2.5",
-        "modelRotation": "0 0 0"
-      }
-    ],
-    "text": "Order #: AMZ-918604\nReceiver: Dr_Foad",
-    "textColor": "orange",
-    "textPosition": "0 0 0.8",
-    "textRotation": "-90 0 0"
+      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"}
+    ]
+  },
+  {
+    "id": "AMZ-1002",
+    "items": [
+      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
+      {"modelSrc": "./models/hand_watch.glb", "modelPosition": "0 0 -2", "modelRotation": "270 180 0", "scale": "0.4 0.4 0.4"}
+    ]
+  },
+  {
+    "id": "AMZ-1003",
+    "items": [
+      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
+      {"modelSrc": "./models/hand_watch.glb", "modelPosition": "0 0 -2", "modelRotation": "270 180 0", "scale": "0.4 0.4 0.4"},
+      {"modelSrc": "./models/rubix_cube.glb", "modelPosition": "0 0 -2", "modelRotation": "180 180 0", "scale": "0.1 0.1 0.1"}
+    ]
+  },
+  {
+    "id": "AMZ-1004",
+    "items": [
+      {"modelSrc": "./models/cup.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.5 0.5 0.5"}
+    ]
+  },
+  {
+    "id": "AMZ-1005",
+    "items": [
+      {"modelSrc": "./models/trading_card_pack.glb", "modelPosition": "0 0 -2", "modelRotation": "0 0 0", "scale": "3 3 3"},
+      {"modelSrc": "./models/diamond_ring.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.2 0.2 0.2"}
+    ]
+  },
+  {
+    "id": "AMZ-1006",
+    "items": [
+      {"modelSrc": "./models/headphones.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"}
+    ]
+  },
+  {
+    "id": "AMZ-1007",
+    "items": [
+      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
+      {"modelSrc": "./models/cup.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.5 0.5 0.5"}
+    ]
+  },
+  {
+    "id": "AMZ-1008",
+    "items": [
+      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
+      {"modelSrc": "./models/rubix_cube.glb", "modelPosition": "0 0 -2", "modelRotation": "180 180 0", "scale": "0.1 0.1 0.1"}
+    ]
+  },
+  {
+    "id": "AMZ-1009",
+    "items": [
+      {"modelSrc": "./models/hand_watch.glb", "modelPosition": "0 0 -2", "modelRotation": "270 180 0", "scale": "0.4 0.4 0.4"},
+      {"modelSrc": "./models/cup.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.5 0.5 0.5"},
+      {"modelSrc": "./models/diamond_ring.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "0.2 0.2 0.2"}
+    ]
+  },
+  {
+    "id": "AMZ-1010",
+    "items": [
+      {"modelSrc": "./models/iphone.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"},
+      {"modelSrc": "./models/hand_watch.glb", "modelPosition": "0 0 -2", "modelRotation": "270 180 0", "scale": "0.4 0.4 0.4"},
+      {"modelSrc": "./models/headphones.glb", "modelPosition": "0 0 -2", "modelRotation": "90 180 0", "scale": "15 15 15"}
+    ]
   }
 ]
