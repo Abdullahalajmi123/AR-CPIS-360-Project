@@ -1,78 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>CPIS-360 Project - Dynamic Packages</title>
+<script>
+AFRAME.registerComponent('package-manager', {
+  init: function () {
+    const sceneEl = this.el;
 
-  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    fetch('./packages.json?v=' + Date.now())
+      .then(r => r.json())
+      .then(data => {
+        const pkg = data[Math.floor(Math.random() * data.length)];
 
-  <script>
-    AFRAME.registerComponent('package-manager', {
-      init: function () {
-        const sceneEl = this.el;
+        const marker = document.createElement('a-marker');
+        marker.setAttribute('type', 'pattern');
+        marker.setAttribute('url', './markers/drfoad.patt');
 
-        fetch('./packages.json?v=' + Date.now())
-          .then(response => response.json())
-          .then(data => {
-            // pick a random package on load
-            const randIndex = Math.floor(Math.random() * data.length);
-            const pkg = data[randIndex];
+        pkg.items.forEach(item => {
+          const model = document.createElement('a-gltf-model');
+          model.setAttribute('src', item.modelSrc);
+          model.setAttribute('position', item.modelPosition);
+          model.setAttribute('scale', item.scale);
+          model.setAttribute('rotation', item.modelRotation);
 
-            // create marker
-            const marker = document.createElement('a-marker');
-            marker.setAttribute('type', 'pattern');
-            marker.setAttribute('url', './markers/drfoad.patt');
-
-            // add items
-            if(pkg.items){
-              pkg.items.forEach((item, i) => {
-                const model = document.createElement('a-gltf-model');
-                model.setAttribute('src', item.modelSrc);
-
-                // adjust position: centered on marker (closer to middle)
-                const offsetX = i * 1.2 - ((pkg.items.length-1)/2 * 1.2);
-                const offsetY = parseFloat(item.modelPosition.split(' ')[1]) - 0.3; // move slightly lower
-                const offsetZ = parseFloat(item.modelPosition.split(' ')[2]);
-                model.setAttribute('position', `${offsetX} ${offsetY} ${offsetZ}`);
-
-                model.setAttribute('scale', item.scale);
-                model.setAttribute('rotation', item.modelRotation);
-
-                // automatic rotation animation
-                model.setAttribute('animation', 'property: rotation; to: 0 360 0; loop: true; dur: 8000; easing: linear');
-
-                marker.appendChild(model);
-              });
-            }
-
-            // text: keep exact positions
-            const text = document.createElement('a-text');
-            text.setAttribute('value', pkg.text);
-            text.setAttribute('position', pkg.textPosition);
-            text.setAttribute('rotation', pkg.textRotation);
-            text.setAttribute('color', pkg.textColor);
-            text.setAttribute('align', 'center');
-            text.setAttribute('width', '6');
-
-            marker.appendChild(text);
-            sceneEl.appendChild(marker);
+          model.addEventListener('model-loaded', function () {
+            if (!item.color) return;
+            const obj = model.getObject3D('mesh');
+            obj.traverse(node => {
+              if (node.isMesh && node.material) {
+                node.material = node.material.clone();
+                node.material.color.set(item.color);
+              }
+            });
           });
-      }
-    });
-  </script>
-</head>
 
-<body style="margin:0; overflow:hidden;">
+          marker.appendChild(model);
+        });
 
-<a-scene
-  package-manager
-  embedded
-  vr-mode-ui="enabled: false"
-  renderer="logarithmicDepthBuffer: true;"
-  arjs="sourceType: webcam; debugUIEnabled: false;">
-  <a-entity camera></a-entity>
-</a-scene>
+        const text = document.createElement('a-text');
+        text.setAttribute('value', pkg.text);
+        text.setAttribute('position', pkg.textPosition);
+        text.setAttribute('rotation', pkg.textRotation);
+        text.setAttribute('color', pkg.textColor);
+        text.setAttribute('align', 'center');
+        text.setAttribute('width', '6');
 
-</body>
-</html>
+        marker.appendChild(text);
+        sceneEl.appendChild(marker);
+      });
+  }
+});
+</script>
