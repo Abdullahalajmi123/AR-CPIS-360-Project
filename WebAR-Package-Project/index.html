@@ -21,14 +21,30 @@
             marker.setAttribute('type', 'pattern');
             marker.setAttribute('url', './markers/drfoad.patt');
 
-            pkg.items.forEach(item => {
-              // Create a wrapper entity to handle position and rotation animation
+            // --- AUTOMATIC SPACING SETUP ---
+            // Adjust this number to add more or less space between models
+            const gapSpacing = 1.8; 
+            const totalItems = pkg.items.length;
+            // Calculate the starting X position so the whole group is centered
+            const startX = -((totalItems - 1) * gapSpacing) / 2;
+
+            pkg.items.forEach((item, index) => {
               const wrapper = document.createElement('a-entity');
-              wrapper.setAttribute('position', item.modelPosition);
-              // Animates a full 360-degree rotation on the Y-axis every 4 seconds
+              
+              // Extract the original Y and Z positions from the JSON
+              const originalPos = item.modelPosition.split(' ');
+              const origY = originalPos[1];
+              const origZ = originalPos[2];
+
+              // Calculate the new X position for this specific item
+              const calculatedX = startX + (index * gapSpacing);
+              
+              // Apply the new spaced-out position
+              wrapper.setAttribute('position', `${calculatedX} ${origY} ${origZ}`);
+
+              // The corrected Z-axis rotation to show front/back
               wrapper.setAttribute('animation', 'property: rotation; to: 0 0 360; loop: true; dur: 4000; easing: linear');
 
-              // Create the model and apply its scale and original JSON rotation
               const model = document.createElement('a-gltf-model');
               model.setAttribute('src', item.modelSrc);
               model.setAttribute('scale', item.scale);
@@ -48,7 +64,6 @@
                 });
               });
 
-              // 3. Append the model to the spinning wrapper, and the wrapper to the marker
               wrapper.appendChild(model);
               marker.appendChild(wrapper);
             });
