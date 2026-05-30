@@ -22,9 +22,15 @@
             marker.setAttribute('url', './markers/drfoad.patt');
 
             pkg.items.forEach(item => {
+              // Create a wrapper entity to handle position and rotation animation
+              const wrapper = document.createElement('a-entity');
+              wrapper.setAttribute('position', item.modelPosition);
+              // Animates a full 360-degree rotation on the Y-axis every 4 seconds
+              wrapper.setAttribute('animation', 'property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear');
+
+              // Create the model and apply its scale and original JSON rotation
               const model = document.createElement('a-gltf-model');
               model.setAttribute('src', item.modelSrc);
-              model.setAttribute('position', item.modelPosition);
               model.setAttribute('scale', item.scale);
               model.setAttribute('rotation', item.modelRotation);
 
@@ -42,7 +48,9 @@
                 });
               });
 
-              marker.appendChild(model);
+              // 3. Append the model to the spinning wrapper, and the wrapper to the marker
+              wrapper.appendChild(model);
+              marker.appendChild(wrapper);
             });
 
             const text = document.createElement('a-text');
