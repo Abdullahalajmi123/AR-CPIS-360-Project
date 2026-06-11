@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CPIS-360 Project - Dynamic Packages</title>
+  <title>CPIS-360 Project - Package Previewer</title>
 
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -11,11 +11,7 @@
     AFRAME.registerComponent('package-manager', {
       init: function () {
         const sceneEl = this.el;
-
-        // Added a timestamp to the URL so the browser stops caching the old JSON file
-        fetch('./packages.json?v=' + Date.now())
-          .then(response => response.json())
-          .then(data => {
+        
             // Pick a random order from the array
             const pkg = data[Math.floor(Math.random() * data.length)];
             console.log("Loading order ID:", pkg.id); // test if it pulls correctly
