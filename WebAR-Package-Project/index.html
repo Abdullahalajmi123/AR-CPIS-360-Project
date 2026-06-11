@@ -12,10 +12,10 @@
       init: function () {
         const sceneEl = this.el;
 
-        fetch('./packages.json?v=')
+        // Added a timestamp to the URL so the browser stops caching the old JSON file
+        fetch('./packages.json?v=' + Date.now())
           .then(response => response.json())
-          .then(
-            {
+          .then(data => {
         
             // Pick a random order from the array
             const pkg = data[Math.floor(Math.random() * data.length)];
