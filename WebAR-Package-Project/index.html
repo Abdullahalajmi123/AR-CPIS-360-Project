@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Packages Previewer</title>
+  <title>CPIS-360 Project - Dynamic Packages</title>
 
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -12,76 +12,72 @@
       init: function () {
         const sceneEl = this.el;
 
-        // Added a timestamp to the URL so the browser stops caching the old JSON file
         fetch('./packages.json?v=' + Date.now())
           .then(response => response.json())
           .then(data => {
-            // Pick a random order from the array
             const pkg = data[Math.floor(Math.random() * data.length)];
-            console.log("Loading order ID:", pkg.id); // test if it pulls correctly
 
             const marker = document.createElement('a-marker');
             marker.setAttribute('type', 'pattern');
             marker.setAttribute('url', './markers/drfoad.patt');
 
-            // Spacing logic so multiple items don't overlap in the center
-            const gap = 1.8; 
+            // --- AUTOMATIC SPACING SETUP ---
+            // Adjust this number to add more or less space between models
+            const gapSpacing = 1.8; 
             const totalItems = pkg.items.length;
-            const startX = -((totalItems - 1) * gap) / 2;
+            // Calculate the starting X position so the whole group is centered
+            const startX = -((totalItems - 1) * gapSpacing) / 2;
 
             pkg.items.forEach((item, index) => {
-              const itemEntity = document.createElement('a-entity');
+              const wrapper = document.createElement('a-entity');
               
-              // Get original Y and Z from the json file
+              // Extract the original Y and Z positions from the JSON
               const originalPos = item.modelPosition.split(' ');
               const origY = originalPos[1];
               const origZ = originalPos[2];
 
-              // Calculate new X position to put them side-by-side
-              const myX = startX + (index * gap);
-              itemEntity.setAttribute('position', `${myX} ${origY} ${origZ}`);
+              // Calculate the new X position for this specific item
+              const calculatedX = startX + (index * gapSpacing);
+              
+              // Apply the new spaced-out position
+              wrapper.setAttribute('position', `${calculatedX} ${origY} ${origZ}`);
 
-              // Fixed the rotation axis so we can actually see the front and back of the models
-              itemEntity.setAttribute('animation', 'property: rotation; to: 0 0 360; loop: true; dur: 4000; easing: linear');
+              // The corrected Z-axis rotation to show front/back
+              wrapper.setAttribute('animation', 'property: rotation; to: 0 0 360; loop: true; dur: 4000; easing: linear');
 
               const model = document.createElement('a-gltf-model');
               model.setAttribute('src', item.modelSrc);
               model.setAttribute('scale', item.scale);
               model.setAttribute('rotation', item.modelRotation);
 
-              // apply the custom hex colors
               model.addEventListener('model-loaded', function () {
                 if (!item.color) return;
 
                 const obj = model.getObject3D('mesh');
-                if (obj) {
-                  obj.traverse(node => {
-                    if (node.isMesh && node.material) {
-                      node.material = node.material.clone();
-                      node.material.color.set(item.color);
-                    }
-                  });
-                }
+                if (!obj) return;
+
+                obj.traverse(node => {
+                  if (node.isMesh && node.material) {
+                    node.material = node.material.clone();
+                    node.material.color.set(item.color);
+                  }
+                });
               });
 
-              itemEntity.appendChild(model);
-              marker.appendChild(itemEntity);
+              wrapper.appendChild(model);
+              marker.appendChild(wrapper);
             });
 
-            // setup the order text
-            const textEl = document.createElement('a-text');
-            textEl.setAttribute('value', pkg.text);
-            textEl.setAttribute('position', pkg.textPosition);
-            textEl.setAttribute('rotation', pkg.textRotation);
-            textEl.setAttribute('color', pkg.textColor);
-            textEl.setAttribute('align', 'center');
-            textEl.setAttribute('width', '6');
+            const text = document.createElement('a-text');
+            text.setAttribute('value', pkg.text);
+            text.setAttribute('position', pkg.textPosition);
+            text.setAttribute('rotation', pkg.textRotation);
+            text.setAttribute('color', pkg.textColor);
+            text.setAttribute('align', 'center');
+            text.setAttribute('width', '6');
 
-            marker.appendChild(textEl);
+            marker.appendChild(text);
             sceneEl.appendChild(marker);
-          })
-          .catch(error => {
-            console.error("Error fetching the packages.json file:", error);
           });
       }
     });
