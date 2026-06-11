@@ -11,6 +11,11 @@
     AFRAME.registerComponent('package-manager', {
       init: function () {
         const sceneEl = this.el;
+
+        fetch('./packages.json?v=')
+          .then(response => response.json())
+          .then(
+            {
         
             // Pick a random order from the array
             const pkg = data[Math.floor(Math.random() * data.length)];
