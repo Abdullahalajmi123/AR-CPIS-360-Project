@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>CPIS-360 Project - Package Previewer</title>
+  <title>CPIS360 Project - Package Previewer</title>
 
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -12,14 +12,13 @@
       init: function () {
         const sceneEl = this.el;
 
-        // Added a timestamp to the URL so the browser stops caching the old JSON file
         fetch('./packages.json?v=' + Date.now())
           .then(response => response.json())
           .then(data => {
         
-            // Pick a random order from the array
+            // Pick a random order
             const pkg = data[Math.floor(Math.random() * data.length)];
-            console.log("Loading order ID:", pkg.id); // test if it pulls correctly
+            console.log("Loading order ID:", pkg.id);
 
             const marker = document.createElement('a-marker');
             marker.setAttribute('type', 'pattern');
@@ -31,7 +30,7 @@
             const startX = -((totalItems - 1) * gap) / 2;
 
             pkg.items.forEach((item, index) => {
-              const itemEntity = document.createElement('a-entity');
+            const itemEntity = document.createElement('a-entity');
               
               // Get original Y and Z from the json file
               const originalPos = item.modelPosition.split(' ');
@@ -42,7 +41,7 @@
               const myX = startX + (index * gap);
               itemEntity.setAttribute('position', `${myX} ${origY} ${origZ}`);
 
-              // Fixed the rotation axis so we can actually see the front and back of the models
+              // rotation movement
               itemEntity.setAttribute('animation', 'property: rotation; to: 0 0 360; loop: true; dur: 4000; easing: linear');
 
               const model = document.createElement('a-gltf-model');
@@ -50,7 +49,7 @@
               model.setAttribute('scale', item.scale);
               model.setAttribute('rotation', item.modelRotation);
 
-              // apply the custom hex colors
+              // colors
               model.addEventListener('model-loaded', function () {
                 if (!item.color) return;
 
@@ -69,7 +68,6 @@
               marker.appendChild(itemEntity);
             });
 
-            // setup the order text
             const textEl = document.createElement('a-text');
             textEl.setAttribute('value', pkg.text);
             textEl.setAttribute('position', pkg.textPosition);
